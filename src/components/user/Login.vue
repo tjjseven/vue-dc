@@ -1,5 +1,5 @@
 <template>
-    <div class="login">
+    <div class="login margin_top">
         <yd-cell-group >
             <yd-cell-item>
                 <span slot="left">手机号：</span>

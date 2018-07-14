@@ -1,5 +1,5 @@
 <template>
-  <yd-slider autoplay="3000">
+  <yd-slider autoplay="3000" class="margin_top">
     <yd-slider-item>
       <a href="http://www.ydcss.com">
         <img src="http://static.ydcss.com/uploads/ydui/1.jpg">

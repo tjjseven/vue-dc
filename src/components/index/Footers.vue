@@ -5,7 +5,11 @@
       <img src="../../assets/img/cart.png" alt="">
     </div>
     <p>共计：￥{{money}}元</p>
-    <p>选好了</p>
+    <p>
+        <router-link to="/order/confirm">
+            选好了
+        </router-link>
+    </p>
   </div>
 </template>
 

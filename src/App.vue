@@ -15,14 +15,22 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
 }
-.yd-slider, .address, .login, .register, .user, .order, .list, .opinion{
+.margin_top{
   margin-top: 1rem;
+}
+.price{
+    margin: .1rem 0 0 0;
+}
+.bgcolor{
+    background: #efeff4;
+    span{
+        color: #969696;
+    }
 }
 </style>

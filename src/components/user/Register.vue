@@ -1,6 +1,6 @@
 <template>
-    <div class="register">
-        <yd-cell-group >
+    <div class="register margin_top">
+        <yd-cell-group>
             <yd-cell-item>
                 <span slot="left">手机号：</span>
                 <yd-input slot="right" v-model="phone" regex="mobile" placeholder="请输入手机号码"></yd-input>

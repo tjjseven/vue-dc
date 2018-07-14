@@ -1,13 +1,20 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '@/components/index/Index'
-import location from '@/components/address/location'
+import location from '@/components/address/Location'
+
 import Login from '@/components/user/Login'
 import Register from '@/components/user/Register'
-import User from '@/components/user/user'
-import Order from '@/components/user/Order'
-import List from '@/components/user/List'
+
+import User from '@/components/user/User'
+import OrderList from '@/components/order/List'
+import AddressList from '@/components/address/List'
 import Opinion from '@/components/user/Opinion'
+
+import Details from '@/components/order/Details'
+import Confirm from '@/components/order/Confirm'
+import Add from '@/components/address/Add'
+import Map from '@/components/address/Map'
 
 
 Vue.use(Router)
@@ -41,18 +48,38 @@ export default new Router({
         },
         {
             path: '/user/order',
-            name: 'order',
-            component: Order
+            name: 'orderlist',
+            component: OrderList
         },
         {
-            path: '/user/list',
-            name: 'list',
-            component: List
+            path: '/user/address',
+            name: 'addrlist',
+            component: AddressList
         },
         {
             path: '/user/opinion',
             name: 'opinion',
             component: Opinion
+        },
+        {
+            path: '/order/details',
+            name: 'detail',
+            component: Details
+        },
+        {
+            path: '/order/confirm',
+            name: 'confirm',
+            component: Confirm
+        },
+        {
+            path: '/address/add',
+            name: 'add',
+            component: Add
+        },
+        {
+            path: '/address/map',
+            name: 'maps',
+            component: Map
         }
     ]
 })

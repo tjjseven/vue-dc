@@ -1,5 +1,5 @@
 <template>
-    <div class="order">
+    <div class="margin_top">
         <yd-preview :buttons="btns">
             <yd-preview-header>
                 <div slot="left">订单号：{{order_num}}</div>
@@ -40,13 +40,13 @@
                 address: '中国',
                 btns: [
                     {
-                        text: '电话',
+                        text: '拨号',
                         click: () => {
                             alert('辅助操作');
                         }
                     },
                     {
-                        text: '取消',
+                        text: '取消订单',
                         click: () => {
                             alert('辅助操作');
                         }
@@ -54,13 +54,20 @@
                     {
                         color: '#F00',
                         text: '立即支付',
-                        link: {path: '/'}
-                    }
-                    ,
+                        click: () => {
+                            this.$dialog.confirm({
+                                title: '消息提示：支付成功！',
+                                // mes: '支付成功',
+                                opts: () => {
+                                    this.$router.replace({path: '/order/details'})
+                                }
+                            });
+                        }
+                    },
                     {
                         color: '#F00',
                         text: '查看状态',
-                        link: {path: '/'}
+                        link: {path: '/order/details'}
                     }
                 ]
             }
@@ -76,9 +83,6 @@
     p{
         float: right;
         margin: .1rem 0 0 .2rem;
-    }
-    .price{
-        margin: .1rem 0 0 0;
     }
     .order_status, .order_discounts{
         color:@red
