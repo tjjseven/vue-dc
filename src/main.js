@@ -26,6 +26,8 @@ import {Radio, RadioGroup} from 'vue-ydui/dist/lib.rem/radio';
 
 
 Vue.component(NavBar.name, NavBar);
+Vue.component(NavBarBackIcon.name, NavBarBackIcon);
+Vue.component(NavBarNextIcon.name, NavBarNextIcon);
 Vue.component(Icons.name, Icons);
 Vue.component(Slider.name, Slider);
 Vue.component(SliderItem.name, SliderItem);

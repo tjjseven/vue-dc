@@ -29,7 +29,11 @@ export default new Router({
         {
             path: '/location',
             name: 'location',
-            component: location
+            component: location,
+            meta: {
+                keepAlive: true, // 需要被缓存
+                // auth: false // 不需要登录
+            }
         },
         {
             path: '/login',
